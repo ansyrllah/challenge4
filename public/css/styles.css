@@ -1,0 +1,160 @@
+/* Replace style bootstrap */
+body {
+   /* font-family: Helvetica, sans-serif!important; */
+   overflow-x: hidden;
+}
+
+.btn-success {
+   --bs-btn-bg: #5CB85F!important;
+   --bs-btn-border-color: #5CB85F!important;
+}
+h1 {
+   font-size: 36px!important;
+}
+p {
+   font-size: 14px!important;
+}
+
+.form-select, .form-control {
+   font-size: 14px!important;
+}
+
+option {
+   margin-block: 2px;
+}
+/*END Replace style bootstrap */
+
+#img-hero
+{
+   /* position: absolute; */
+   right: 0;
+}
+#img-hero #car-bg {   
+   width: -webkit-fill-available;
+   background-color: #0D28A6;
+   position: absolute;
+   align-self: end;
+   border-radius: 60px 0px 0px 0px;
+}
+#img-hero #car-img {
+   width: -webkit-fill-available;
+   position: absolute;
+   z-index: 2;
+   align-self: end;
+   /* justify-content: end; */
+    display: grid;
+}
+#img-hero #car-img2 {
+   width: -webkit-fill-available;
+   z-index: 2;
+   align-self: end;
+   /* justify-content: end; */
+    display: grid;
+    visibility: hidden;
+}
+
+#img-hero img  {
+   z-index: 1;
+   width: 100%;
+   max-height: 360px;
+}
+
+nav, nav button {
+   font-size: 14px!important;
+   z-index: 1000;
+}
+
+.nav__logo {
+   display: block;
+   height: 34px;
+   width: 100px;
+   background-color: #0D28A6;
+   content: "";
+}
+
+nav li {
+   list-style: none;
+}
+
+.list__benefit {
+   list-style: none;
+   padding: 0;
+}
+
+.list__benefit li {
+   padding-left: 40px;
+   background-image: url('./assets/icon/list-benefit.svg'); 
+   background-repeat: no-repeat;
+   background-position: left;
+   background-size: 24px 24px;
+   margin-bottom: 5px;
+   line-height: 2.5;
+   font-size: 14px;
+}
+
+#testimonial__carousel-parent {
+   transform: translateX(37.5%);
+   transition: 0.5s ease-in-out;
+}
+
+.testimonial__carousel {
+   width: 619px;
+   height: fit-content;
+   content: '';
+   margin-inline: 15px;
+}
+
+#testimonial svg {
+   cursor: pointer;
+   fill: white;
+   transition: 0.3s ease-in-out;
+}
+
+#testimonial svg path {
+   stroke: black;
+   fill: none;
+   transition: 0.3s ease-in-out;
+}
+#testimonial svg:hover path {
+   stroke: white;
+   fill: #5CB85F;
+   transition: 0.3s ease-in-out;
+}
+
+#testimonial svg:active path {
+   stroke: white;
+   fill: #146c43;
+   transition: 0.1s ease-in-out;
+}
+
+#testimonial img {
+   object-fit: cover;
+}
+
+.bg__soft-blue {
+   background-color: #F1F3FF;
+}
+
+.bg__dark-blue {
+   background-color: #0D28A6;
+}
+
+#form__filter-cars {
+   margin-top: -40px;
+    background-color: white;
+    z-index: 1000;
+    position: relative;
+    font-size: 14px;
+}
+
+.card-car {
+ width: 333px;
+ height: 100%;
+}
+
+.car-img {
+   object-fit: cover;
+   height: 200px;
+   width: 100%;
+   object-position: center;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sewa Mobil</title>
+   <link rel="stylesheet" href="./css/styles.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+  <body class="bg-white">
+    <section class="bg__soft-blue">
+      <nav class="container d-flex justify-content-between py-4 align-items-center">
+         <div id="logo-nav" class="nav__logo"></div>
+         <div id="content-nav" class=" d-lg-block d-none">
+            <ul class="d-flex align-items-center gap-5 mb-0">
+               <li>Our Services</li>
+               <li>Why Us</li>
+               <li>Testimonial</li>
+               <li>FAQ</li>
+               <li><button class="btn btn-success rounded-1 fw-semibold">Register</button></li>
+            </ul>
+         </div>
+         <button class="btn btn-outline-dark border-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg></button>
+         <div class="offcanvas offcanvas-end pe-3" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" style="max-width: 200px;">
+            <div class="offcanvas-header pt-4 mt-2 pb-0">
+               <div class="offcanvas-title fw-bold" id="offcanvasWithBothOptionsLabel">BCR</div>
+               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="opacity: 1;"></button>
+            </div>
+            <div class="offcanvas-body">
+               <ul class="p-0 gap-3 d-grid">
+                  <li>Our Services</li>
+                  <li>Why Us</li>
+                  <li>Testimonial</li>
+                  <li>FAQ</li>
+                  <li><button class="btn btn-success rounded-1 fw-semibold">Register</button></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </section>
+
+   <section class="bg__soft-blue">
+      <div id="hero" class="container d-lg-flex align-items-center">
+         <div id="text-hero" class="col-lg-6 align-content-center py-5">
+            <h1 class="fw-bolder mb-4">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+            <p class="col-lg-9">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+         </div>
+         <div id="img-hero" class="d-grid align-self-end col-lg-6">
+            <div id="car-img" class="justify-content-lg-end justify-content-center"><img src="./assets/img/img_car.png" alt=""></div>
+            <div id="car-img2"><img src="./assets/img/img_car.png" alt=""></div>
+            <div id="car-bg" class="col-12 col-lg-6"></div>
+         </div>
+         <div></div>
+      </div>
+   </section>
+
+   <section class="container px-4">
+      <div id="form__filter-cars" class="d-flex p-4 mx-sm-5 shadow rounded-3 border">
+        <div class="d-lg-flex col-12 gap-3 align-items-end d-grid">
+          <div class="col">
+            <div>Tipe Driver</div>
+            <select class="form-select rounded-1 mt-1 border" name="cars" id="cars-select">
+              <option value="" disabled selected>Pilih Tipe Driver</option>
+              <option value="dengan-sopir">Dengan Sopir</option>
+              <option value="tanpa-sopir">Tanpa Sopir (Lepas Kunci)</option>
+            </select>
+          </div>
+          <div class="d-grid col">
+            <label for="date">Tanggal</label>
+            <input class="form-control rounded-1 mt-1 border" type="date" id="date" name="date">
+          </div>
+          <div class="d-grid col">
+            <label for="date">Waktu Jemput/Ambil</label>
+            <input class="form-control rounded-1 mt-1 border" type="time" id="time" name="time">
+          </div>
+          <div class="col">
+            <div>Jumlah Penumpang (optional)</div>
+            <div class="input-icon rounded-1 mt-1 border d-flex align-items-center">
+               <input class="form-control border-0" id="capacity" type="number" placeholder="Jumlah Penumpang">
+               <span class="input-icon-addon">
+                 <!-- Download SVG icon from http://tabler-icons.io/i/search -->
+                 <svg class="me-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.167 17.5V15.8333C19.1664 15.0948 18.9206 14.3773 18.4681 13.7936C18.0156 13.2099 17.3821 12.793 16.667 12.6083" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14.1663 17.5V15.8333C14.1663 14.9493 13.8152 14.1014 13.19 13.4763C12.5649 12.8512 11.7171 12.5 10.833 12.5H4.16634C3.28229 12.5 2.43444 12.8512 1.80932 13.4763C1.1842 14.1014 0.833008 14.9493 0.833008 15.8333V17.5" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.333 2.60834C14.05 2.79192 14.6855 3.20892 15.1394 3.7936C15.5932 4.37827 15.8395 5.09736 15.8395 5.8375C15.8395 6.57765 15.5932 7.29674 15.1394 7.88141C14.6855 8.46609 14.05 8.88309 13.333 9.06667" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.50033 9.16667C9.34128 9.16667 10.8337 7.67428 10.8337 5.83333C10.8337 3.99238 9.34128 2.5 7.50033 2.5C5.65938 2.5 4.16699 3.99238 4.16699 5.83333C4.16699 7.67428 5.65938 9.16667 7.50033 9.16667Z" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+               </span>
+             </div>
+          </div>
+          <div>
+            <button disabled class="btn rounded-1 btn-success border-0 fw-semibold" id="load-btn">Cari Mobil</button>
+          </div>          
+        </div>
+      </div>
+   </section>
+
+    <div id="cars-container" class="container d-flex flex-wrap gap-3 mt-4 justify-content-center"></div>
+
+    <footer class="container pt-5 d-lg-flex mt-5">
+      <div class="me-5">
+        <p>Jalan Suroyo No. 161 Mayangan Kota <br> Probolonggo 672000</p>
+        <p>binarcarrental@gmail.com</p>
+        <p>081-233-334-808</p>
+      </div>
+      <div class="ps-lg-5 me-lg-5 fw-semibold">
+        <a class="text-decoration-none text-dark" href="#"><p>Our services</p></a>
+        <a class="text-decoration-none text-dark" href="#"><p>Why Us</p></a>
+        <a class="text-decoration-none text-dark" href="#"><p>Testimonial</p></a>
+        <a class="text-decoration-none text-dark" href="#"><p>FAQ</p></a>
+      </div>
+      <div class="ps-lg-5 me-lg-5 mb-3">
+        <p>Connect with us</p>
+        <div class="d-flex gap-3">
+          <a href="#"><img src="./assets/icon/icon_facebook.svg" alt="" height="32px" width="32px"></a>
+          <a href="#"><img src="./assets/icon/icon_instagram.svg" alt=""  height="32px" width="32px"></a>
+          <a href="#"><img src="./assets/icon/icon_twitter.svg" alt="" height="32px" width="32px"></a>
+          <a href="#"><img src="./assets/icon/icon_mail.svg" alt="" height="32px" width="32px"></a>
+          <a href="#"><img src="./assets/icon/icon_twitch.svg" alt="" height="32px" width="32px"></a>
+        </div>
+      </div>
+      <div class="ps-lg-5">
+        <p>Copyright Binar 2022</p>
+        <a href="#" class="nav__logo"></a>
+      </div>
+    </footer>
+
+    <!-- Example Javascript -->
+    <script type="text/javascript" src="./scripts/binar.js"></script>
+    <script type="text/javascript" src="./scripts/app.example.js"></script>
+    <script type="text/javascript" src="./scripts/car.example.js"></script>
+    <script type="text/javascript" src="./scripts/main.example.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script>
+      function heighCarBg() {
+         var carImgHeight = document.getElementById("car-img").offsetHeight;
+         var carRefImg = document.getElementById("car-img2").offsetHeight;
+         document.getElementById("car-img").style.height = carRefImg + "px";
+         document.getElementById("car-bg").style.height = carRefImg * 0.09 + "%";
+         var screenWidth = window.innerWidth;
+         console.log("Lebar layar saat ini adalah: " + screenWidth + "px");
+      }
+
+      function updateButton () {
+        var button = document.getElementById("load-btn");
+        var carSelect = document.getElementById("cars-select");
+        var date = document.getElementById("date");
+        var time = document.getElementById("time");
+
+        if (carSelect.value && date.value && time.value) {
+          button.disabled = false;
+        }
+        else {
+          button.disabled = true;
+        }
+      }
+      window.addEventListener('load', function() {
+          heighCarBg();
+      });
+
+      window.addEventListener('resize', function() {
+          heighCarBg();
+      });
+
+      window.addEventListener('change', function() {
+          updateButton();
+      });
+
+   </script>
+  </body>
+</html>

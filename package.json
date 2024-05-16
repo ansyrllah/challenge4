@@ -1,0 +1,16 @@
+{
+  "name": "binar-fsw-challenge-04",
+  "version": "1.0.0",
+  "description": "Challenge 4: Project HTTP Server dan DOM",
+  "main": "server/index.js",
+  "author": "ansyarullah",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node server/index.js",
+    "startdev": "nodemon server/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
