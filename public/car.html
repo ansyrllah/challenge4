@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Sewa Mobil</title>
-   <link rel="stylesheet" href="./css/styles.css">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Binar Car Rental</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- icon -->
+    <link rel="icon" href="./assets/img/fi_truck.svg" />
 </head>
-  <body class="bg-white">
-    <section class="bg__soft-blue">
-      <nav class="container d-flex justify-content-between py-4 align-items-center">
-         <div id="logo-nav" class="nav__logo"></div>
-         <div id="content-nav" class=" d-lg-block d-none">
-            <ul class="d-flex align-items-center gap-5 mb-0">
-               <li>Our Services</li>
-               <li>Why Us</li>
-               <li>Testimonial</li>
-               <li>FAQ</li>
-               <li><button class="btn btn-success rounded-1 fw-semibold">Register</button></li>
-            </ul>
-         </div>
-         <button class="btn btn-outline-dark border-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg></button>
-         <div class="offcanvas offcanvas-end pe-3" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" style="max-width: 200px;">
-            <div class="offcanvas-header pt-4 mt-2 pb-0">
-               <div class="offcanvas-title fw-bold" id="offcanvasWithBothOptionsLabel">BCR</div>
-               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="opacity: 1;"></button>
+<body>
+    <!-- START NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg pt-3 pb-3">
+        <div class="container">
+            <a class="navbar-brand bg-primary px-4" href="#"> <img src="./assets/icon/fi_truck.svg" alt="brand logo" /><strong> BCR</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="d-flex justify-content-end navbar-nav grid gap-0 column-gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html#services">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html#why-us">Why Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html#faq">FAQ</a>
+                    </li>
+                    <li>
+                        <button class="btn btn-success ms-2" href="#"><strong>Register</strong></button>
+                    </li>
+                </ul>
             </div>
-            <div class="offcanvas-body">
-               <ul class="p-0 gap-3 d-grid">
-                  <li>Our Services</li>
-                  <li>Why Us</li>
-                  <li>Testimonial</li>
-                  <li>FAQ</li>
-                  <li><button class="btn btn-success rounded-1 fw-semibold">Register</button></li>
-               </ul>
+        </div>
+    </nav>
+
+    <!-- END NAVBAR -->
+
+    <!-- START HERO -->
+    <section class="container-fluid hero pe-0">
+        <div class="row align-items-center gx-0">
+            <div class="col-sm pe-3">
+                <h1 class="mb-3 pe-2">Sewa & Rental Mobil Terbaik di Kawasan Bandung</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .</p>
+                
+                
             </div>
-         </div>
-      </nav>
-   </section>
+            <div class="col-sm">
+                <img class="mt-4 me-0 img-fluid" src="./assets/img/img_car.png" alt="hero-car" />
+            </div>
+        </div>
+    </section>
+    <!-- END HERO -->
 
-   <section class="bg__soft-blue">
-      <div id="hero" class="container d-lg-flex align-items-center">
-         <div id="text-hero" class="col-lg-6 align-content-center py-5">
-            <h1 class="fw-bolder mb-4">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
-            <p class="col-lg-9">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-         </div>
-         <div id="img-hero" class="d-grid align-self-end col-lg-6">
-            <div id="car-img" class="justify-content-lg-end justify-content-center"><img src="./assets/img/img_car.png" alt=""></div>
-            <div id="car-img2"><img src="./assets/img/img_car.png" alt=""></div>
-            <div id="car-bg" class="col-12 col-lg-6"></div>
-         </div>
-         <div></div>
-      </div>
-   </section>
-
-   <section class="container px-4">
+   <section class="container pencarian-mobil">
       <div id="form__filter-cars" class="d-flex p-4 mx-sm-5 shadow rounded-3 border">
         <div class="d-lg-flex col-12 gap-3 align-items-end d-grid">
           <div class="col">
